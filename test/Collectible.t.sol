@@ -5,6 +5,8 @@ import {Test} from "forge-std/Test.sol";
 import {Collectible} from "../src/Collectible.sol";
 
 contract CollectibleTest is Test {
+    receive() external payable {}
+
     Collectible public collectible;
 
     function setUp() public {
